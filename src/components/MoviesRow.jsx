@@ -23,10 +23,12 @@ const MoviesRow = ({ title, endpoint }) => {
         {movies.map((movie) => (
           <div
             key={movie.id}
-            className="w-full  max-h-28 transition hover:scale-[1.09]"
+            className={` w-full  transition hover:scale-[1.09] flex-[0_0_10%]  ${
+              title === "Netflix Originals" ? "h-[250px]" : "h-[100px]"
+            }`}
           >
             <img
-              className="object-contain w-full h-full"
+              className="object-cover w-full h-full"
               src={`${imageBaseUrl}${movie.poster_path}`}
               alt={movie.name}
             />
