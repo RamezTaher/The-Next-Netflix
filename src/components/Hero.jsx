@@ -20,7 +20,7 @@ const Hero = () => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str
   }
   return (
-    <header
+    <div
       className="text-white object-contain h-[470px] bg-center bg-cover flex flex-col"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
@@ -44,7 +44,7 @@ const Hero = () => {
           backgroundImage: `linear-gradient(180deg,transparent,rgba(37, 37, 37, 0.6),#111)`,
         }}
       ></div>
-    </header>
+    </div>
   )
 }
 
