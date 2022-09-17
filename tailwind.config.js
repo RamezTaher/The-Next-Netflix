@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   mode: "jit",
   presets: [],
@@ -990,11 +991,5 @@ module.exports = {
     "active",
     "disabled",
   ],
-  plugins: [
-    require("tailwindcss-rtl"),
-    require("@tailwindcss/forms")({
-      strategy: "class", // only generate classes
-    }),
-    require("@tailwindcss/line-clamp"),
-  ],
+  plugins: [],
 }
