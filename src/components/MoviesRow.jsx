@@ -19,11 +19,11 @@ const MoviesRow = ({ title, endpoint }) => {
   return (
     <div>
       <h2>{title}</h2>
-      <div className="flex gap-2 overflow-x-scroll overflow-y-hidden p-5 scrollbar-hide">
+      <div className="flex gap-2 overflow-x-scroll overflow-y-hidden py-5 scrollbar-hide">
         {movies.map((movie) => (
           <div
             key={movie.id}
-            className={` w-full  transition hover:scale-[1.09] flex-[0_0_10%]  ${
+            className={` w-full  transition hover:scale-[1.09] flex-[0_0_50%] md:flex-[0_0_28%] lg:flex-[0_0_20%] xl:flex-[0_0_10%]  ${
               title === "Netflix Originals" ? "h-[250px]" : "h-[100px]"
             }`}
           >

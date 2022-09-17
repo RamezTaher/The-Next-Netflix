@@ -4,7 +4,7 @@ import endpoints from "../constants/endpoints"
 
 const Home = () => {
   return (
-    <>
+    <div className="container sm:mx-auto px-4">
       <MoviesRow
         title="Netflix Originals"
         endpoint={endpoints.getNetflixOriginals}
@@ -19,7 +19,7 @@ const Home = () => {
         title="Documentaries"
         endpoint={endpoints.getDocumentariesMovies}
       />
-    </>
+    </div>
   )
 }
 
