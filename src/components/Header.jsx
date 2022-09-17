@@ -11,7 +11,7 @@ const Header = () => {
         setIsShown(false)
       }
     })
-  }, [window.scrollY])
+  }, [])
 
   return (
     <header
