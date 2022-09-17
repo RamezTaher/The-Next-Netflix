@@ -15,7 +15,7 @@ module.exports = {
         secondary: "#9F8154",
         "secondary-tint": "#F5F5F5",
         "dark-shade": "#000000",
-        dark: "#2B2B2B",
+        dark: "#111",
         "dark-tint": "#E7E7E7",
         stroke: "#AFADAD",
         gray: "#979797",
