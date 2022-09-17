@@ -1,0 +1,31 @@
+.btn {
+  @apply font-bold text-sm py-3 rounded-xl px-10 w-full flex justify-center items-center gap-2 border border-solid border-transparent;
+
+  &-primary {
+    @apply bg-primary text-white;
+    &-outline {
+      @apply bg-dark-tint text-primary border-2 border-primary;
+    }
+  }
+  &-secondary {
+    @apply bg-secondary text-white;
+    &-outline {
+      @apply bg-dark-tint text-secondary  border-secondary;
+    }
+    &-outline-2 {
+      @apply bg-white text-secondary  border-primary;
+    }
+  }
+  &-dark-tint {
+    @apply text-white bg-dark-tint;
+    &-outline {
+      @apply text-dark border-dark-tint;
+    }
+  }
+  &-danger {
+    @apply text-white bg-[#E84434];
+  }
+  &-info {
+    @apply text-white bg-[#1977F2];
+  }
+}
